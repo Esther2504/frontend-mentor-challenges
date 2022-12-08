@@ -1,0 +1,37 @@
+@import url('https://fonts.google.com/specimen/Outfit');
+
+body {
+    margin: 0;
+    background-color: $lightgray;
+    font-family: 'Outfit', sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 20px;
+    color: $darkblue;
+    font-weight: 700;
+    margin: 15px;
+}
+
+p {
+    font-size: 14px;
+    color: $grayblue;
+    margin: 15px;
+    font-weight: 400;
+}
+
+img {
+    width: 270px;
+    border-radius: 15px;
+}
+
+.card {
+    width: 280px;
+    height: 420px;
+    background-color: $white;
+    margin: 100px auto;
+    border-radius: 15px;
+    padding: 12px;
+    box-shadow: 1px 1px 9px 4px rgba(0,0,0,0.1);
+}
