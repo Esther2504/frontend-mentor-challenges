@@ -1,0 +1,16 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+nav li {
+    list-style: none;
+    display: inline-block;
+    margin: 10px;
+}
+
+nav img {
+    width: 60px;
+    height: 50px;
+}
