@@ -12,26 +12,37 @@ body {
   background-color: hsl(36deg, 100%, 99%);
 }
 
+h1, h2, p {
+  cursor: default;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
-  margin: 20px;
+  margin: 50px 20px 50px 20px;
+  font-size: 0.9rem;
+  color: hsl(236deg, 13%, 42%);
 }
 
 nav li {
   list-style: none;
   display: inline-block;
-  margin: 10px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+nav li:hover {
+  color: hsl(5deg, 85%, 63%);
 }
 
 nav img {
   width: 60px;
-  height: 50px;
+  height: 40px;
 }
 
 .container {
   display: grid;
-  gap: 20px;
+  gap: 30px;
   grid-template-areas: "top top right" "bottom1 bottom2 bottom3";
 }
 
@@ -47,6 +58,11 @@ button {
   height: 40px;
   font-size: 1rem;
   margin-top: -30px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: black;
 }
 
 .main-article {
@@ -75,6 +91,10 @@ button {
 .side-article h2 {
   font-size: 1rem;
   margin-top: 25px;
+  cursor: pointer;
+}
+.side-article h2:hover {
+  color: hsl(35deg, 77%, 62%);
 }
 .side-article p {
   color: hsl(236deg, 13%, 42%);
@@ -87,9 +107,11 @@ button {
 
 .bottom-article {
   display: grid;
-  gap: 20px;
+  gap: 15px;
   grid-template-areas: "img number" "img title" "img description";
+  margin-top: 20px;
   margin-bottom: 50px;
+  height: 150px;
 }
 .bottom-article img {
   height: 100%;
@@ -99,4 +121,17 @@ button {
 }
 .bottom-article h1 {
   color: hsl(233deg, 8%, 79%);
+}
+.bottom-article h2 {
+  font-size: 1rem;
+  margin-top: -20px;
+  cursor: pointer;
+}
+.bottom-article h2:hover {
+  color: hsl(5deg, 85%, 63%);
+}
+.bottom-article p {
+  font-size: 0.8rem;
+  margin-top: -20px;
+  color: hsl(236deg, 13%, 42%);
 }/*# sourceMappingURL=style.css.map */

@@ -1,16 +1,23 @@
 nav {
     display: flex;
     justify-content: space-between;
-    margin: 20px;
+    margin: 50px 20px 50px 20px;
+    font-size: 0.9rem;
+    color: hsl(236, 13%, 42%);
 }
 
 nav li {
     list-style: none;
     display: inline-block;
-    margin: 10px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+nav li:hover {
+color: hsl(5, 85%, 63%);
 }
 
 nav img {
     width: 60px;
-    height: 50px;
+    height: 40px;
 }

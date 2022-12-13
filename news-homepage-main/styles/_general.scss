@@ -14,3 +14,7 @@ body {
     margin: 0 auto;
     background-color: hsl(36, 100%, 99%);
 }
+
+h1, h2, p {
+  cursor: default;
+}
