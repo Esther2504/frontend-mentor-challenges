@@ -30,7 +30,7 @@ button:hover {
     gap: 20px;
     grid-template-areas:
     'img img'
-    'title left'
+    'title right'
     'title button';
 
     h1 {
@@ -113,4 +113,22 @@ button:hover {
         margin-top: -20px;
         color: hsl(236, 13%, 42%)
     }
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        grid-template-areas:
+        'top'
+        'right'
+        'bottom';
+    }
+
+    .main-article {
+        grid-template-areas:
+        'img'
+        'title'
+        'right'
+        'button';
+    }
+    
 }

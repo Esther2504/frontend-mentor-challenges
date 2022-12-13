@@ -68,7 +68,7 @@ button:hover {
 .main-article {
   display: grid;
   gap: 20px;
-  grid-template-areas: "img img" "title left" "title button";
+  grid-template-areas: "img img" "title right" "title button";
 }
 .main-article h1 {
   font-size: 3.2rem;
@@ -134,4 +134,13 @@ button:hover {
   font-size: 0.8rem;
   margin-top: -20px;
   color: hsl(236deg, 13%, 42%);
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    grid-template-areas: "top" "right" "bottom";
+  }
+  .main-article {
+    grid-template-areas: "img" "title" "right" "button";
+  }
 }/*# sourceMappingURL=style.css.map */
