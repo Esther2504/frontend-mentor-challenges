@@ -1,12 +1,15 @@
-@import url("https://fonts.google.com/specimen/Inter");
+@font-face {
+  font-family: Inter;
+  src: url(../assets/fonts/static/Inter-regular.ttf);
+}
 * {
-  background-color: hsl(36deg, 100%, 99%);
   font-family: "Inter";
 }
 
 body {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
+  background-color: hsl(36deg, 100%, 99%);
 }
 
 nav {
@@ -28,10 +31,72 @@ nav img {
 
 .container {
   display: grid;
-  width: 80%;
   gap: 20px;
+  grid-template-areas: "top top right" "bottom1 bottom2 bottom3";
 }
 
 img {
-  width: 200px;
+  width: 100%;
+}
+
+button {
+  border-style: none;
+  background-color: hsl(5deg, 85%, 63%);
+  color: white;
+  width: 150px;
+  height: 40px;
+  font-size: 1rem;
+  margin-top: -30px;
+}
+
+.main-article {
+  display: grid;
+  gap: 20px;
+  grid-template-areas: "img img" "title left" "title button";
+}
+.main-article h1 {
+  font-size: 3.2rem;
+  margin-top: 0;
+  font-weight: 800;
+}
+.main-article p {
+  font-size: 1rem;
+  color: hsl(236deg, 13%, 42%);
+}
+
+.side-article {
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+.side-article h1 {
+  color: hsl(35deg, 77%, 62%);
+}
+.side-article h2 {
+  font-size: 1rem;
+  margin-top: 25px;
+}
+.side-article p {
+  color: hsl(236deg, 13%, 42%);
+  font-size: 0.9rem;
+  margin-bottom: 25px;
+}
+.side-article hr {
+  border-color: hsl(236deg, 13%, 42%);
+}
+
+.bottom-article {
+  display: grid;
+  gap: 20px;
+  grid-template-areas: "img number" "img title" "img description";
+  margin-bottom: 50px;
+}
+.bottom-article img {
+  height: 100%;
+}
+.bottom-article h1, .bottom-article h2, .bottom-article p {
+  margin: 0;
+}
+.bottom-article h1 {
+  color: hsl(233deg, 8%, 79%);
 }/*# sourceMappingURL=style.css.map */

@@ -1,11 +1,16 @@
-@import url("https://fonts.google.com/specimen/Inter");
+// @import url("https://fonts.google.com/specimen/Inter");
+
+@font-face {
+  font-family: Inter;
+  src: url(../assets/fonts/static/Inter-regular.ttf);
+}
 
 * {
-  background-color: hsl(36, 100%, 99%);
   font-family: "Inter";
 }
 
 body {
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
+    background-color: hsl(36, 100%, 99%);
 }

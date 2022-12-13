@@ -1,9 +1,88 @@
 .container {
     display: grid;
-    width: 80%;
     gap: 20px;
+    grid-template-areas:
+    'top top right'
+    'bottom1 bottom2 bottom3';
 }
 
 img {
-    width: 200px;
+    width: 100%;
+}
+
+button {
+    border-style: none;
+    background-color: hsl(5, 85%, 63%);
+    color: white;
+    width: 150px;
+    height: 40px;
+    font-size: 1rem;
+    margin-top: -30px;
+}
+
+.main-article {
+    display: grid;
+    gap: 20px;
+    grid-template-areas:
+    'img img'
+    'title left'
+    'title button';
+
+    h1 {
+        font-size: 3.2rem;
+        margin-top: 0;
+        font-weight: 800;
+    }
+
+    p {
+        font-size: 1rem;
+        color: hsl(236, 13%, 42%);
+    }
+}
+
+.side-article {
+    background-color: black;
+    color: white;
+    padding: 20px;
+
+    h1 {
+        color: hsl(35, 77%, 62%);
+    }
+
+    h2 {
+        font-size: 1rem;
+        margin-top: 25px;
+    }
+
+    p {
+        color: hsl(236, 13%, 42%);
+        font-size: 0.9rem;
+        margin-bottom: 25px;
+    }
+
+    hr {
+        border-color: hsl(236, 13%, 42%);
+    }
+}
+
+.bottom-article {
+    display: grid;
+    gap: 20px;
+    grid-template-areas:
+    'img number'
+    'img title'
+    'img description';
+    margin-bottom: 50px;
+
+    img {
+        height: 100%;
+    }
+
+    h1, h2, p {
+        margin: 0;
+    }
+
+    h1 {
+        color: hsl(233, 8%, 79%);
+    }
 }
