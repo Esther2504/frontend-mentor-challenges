@@ -40,6 +40,23 @@ nav img {
   height: 40px;
 }
 
+.mobile-nav {
+  display: none;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 100%;
+  width: 60%;
+  top: 0;
+  right: 0;
+  background-color: hsl(36deg, 100%, 99%);
+  padding-top: 100px;
+}
+.mobile-nav li {
+  margin-left: -10px;
+}
+
 .container {
   display: grid;
   gap: 30px;
