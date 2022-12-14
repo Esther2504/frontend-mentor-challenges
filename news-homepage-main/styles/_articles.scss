@@ -1,134 +1,140 @@
 .container {
-    display: grid;
-    gap: 30px;
-    grid-template-areas:
-    'top top right'
-    'bottom1 bottom2 bottom3';
+  display: grid;
+  gap: 30px;
+  grid-template-areas:
+    "top top right"
+    "bottom1 bottom2 bottom3";
 }
 
 img {
-    width: 100%;
+  width: 100%;
 }
 
 button {
-    border-style: none;
-    background-color: hsl(5, 85%, 63%);
-    color: white;
-    width: 150px;
-    height: 40px;
-    font-size: 1rem;
-    margin-top: -30px;
-    cursor: pointer;
+  border-style: none;
+  background-color: hsl(5, 85%, 63%);
+  color: white;
+  width: 150px;
+  height: 40px;
+  font-size: 1rem;
+  margin-top: -30px;
+  cursor: pointer;
 }
 
 button:hover {
-    background-color: black;
+  background-color: black;
 }
 
 .main-article {
-    display: grid;
-    gap: 20px;
-    grid-template-areas:
-    'img img'
-    'title right'
-    'title button';
+  display: grid;
+  gap: 20px;
+  grid-template-areas:
+    "img img"
+    "title right"
+    "title button";
 
-    h1 {
-        font-size: 3.2rem;
-        margin-top: 0;
-        font-weight: 800;
-    }
+  h1 {
+    font-size: 3.2rem;
+    margin-top: 0;
+    font-weight: 800;
+  }
 
-    p {
-        font-size: 1rem;
-        color: hsl(236, 13%, 42%);
-    }
+  p {
+    font-size: 1rem;
+    color: hsl(236, 13%, 42%);
+  }
 }
 
 .side-article {
-    background-color: black;
-    color: white;
-    padding: 20px;
+  background-color: black;
+  color: white;
+  padding: 20px;
 
-    h1 {
-        color: hsl(35, 77%, 62%);
-    }
+  h1 {
+    color: hsl(35, 77%, 62%);
+  }
 
-    h2 {
-        font-size: 1rem;
-        margin-top: 25px;
-        cursor: pointer;
-    }
+  h2 {
+    font-size: 1rem;
+    margin-top: 25px;
+    cursor: pointer;
+  }
 
-    h2:hover {
-        color: hsl(35, 77%, 62%)
-    }
+  h2:hover {
+    color: hsl(35, 77%, 62%);
+  }
 
-    p {
-        color: hsl(236, 13%, 42%);
-        font-size: 0.9rem;
-        margin-bottom: 25px;
-    }
+  p {
+    color: hsl(236, 13%, 42%);
+    font-size: 0.9rem;
+    margin-bottom: 25px;
+  }
 
-    hr {
-        border-color: hsl(236, 13%, 42%);
-    }
+  hr {
+    border-color: hsl(236, 13%, 42%);
+  }
 }
 
 .bottom-article {
-    display: grid;
-    gap: 15px;
-    grid-template-areas:
-    'img number'
-    'img title'
-    'img description';
-    margin-top: 20px;
-    margin-bottom: 50px;
-    height: 150px;
+  display: grid;
+  gap: 15px;
+  grid-template-areas:
+    "img number"
+    "img title"
+    "img description";
+  margin-top: 20px;
+  margin-bottom: 50px;
+  height: 150px;
 
-    img {
-        height: 100%;
-    }
+  img {
+    height: 100%;
+  }
 
-    h1, h2, p {
-        margin: 0;
-    }
+  h1,
+  h2,
+  p {
+    margin: 0;
+  }
 
-    h1 {
-        color: hsl(233, 8%, 79%);
-    }
+  h1 {
+    color: hsl(233, 8%, 79%);
+  }
 
-    h2 {
-        font-size: 1rem;
-        margin-top: -20px;
-        cursor: pointer;
-    }
+  h2 {
+    font-size: 1rem;
+    margin-top: -20px;
+    cursor: pointer;
+  }
 
-    h2:hover {
-        color: hsl(5, 85%, 63%);
-    }
+  h2:hover {
+    color: hsl(5, 85%, 63%);
+  }
 
-    p {
-        font-size: 0.8rem;
-        margin-top: -20px;
-        color: hsl(236, 13%, 42%)
-    }
+  p {
+    font-size: 0.8rem;
+    margin-top: -20px;
+    color: hsl(236, 13%, 42%);
+  }
 }
 
 @media screen and (max-width: 800px) {
-    .container {
-        grid-template-areas:
-        'top'
-        'right'
-        'bottom';
-    }
+  .container {
+    grid-template-areas:
+      "top"
+      "right"
+      "bottom";
+  }
 
-    .main-article {
-        grid-template-areas:
-        'img'
-        'title'
-        'right'
-        'button';
+  .main-article {
+    grid-template-areas:
+      "img"
+      "title"
+      "right"
+      "button";
+    margin-bottom: 10px;
+
+    p {
+      margin-top: -50px;
     }
-    
+  }
 }

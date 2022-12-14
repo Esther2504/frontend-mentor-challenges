@@ -58,6 +58,7 @@ nav img {
 
 .hamburger {
   display: none;
+  cursor: pointer;
 }
 
 .hamburger i {
@@ -65,11 +66,12 @@ nav img {
   height: 3px;
   background-color: black;
   position: absolute;
-  right: 10px;
+  right: 50px;
 }
 
 .cross {
   display: none;
+  cursor: pointer;
 }
 
 .cross i {
@@ -178,7 +180,9 @@ button:hover {
 .bottom-article img {
   height: 100%;
 }
-.bottom-article h1, .bottom-article h2, .bottom-article p {
+.bottom-article h1,
+.bottom-article h2,
+.bottom-article p {
   margin: 0;
 }
 .bottom-article h1 {
@@ -204,5 +208,9 @@ button:hover {
   }
   .main-article {
     grid-template-areas: "img" "title" "right" "button";
+    margin-bottom: 10px;
+  }
+  .main-article p {
+    margin-top: -50px;
   }
 }/*# sourceMappingURL=style.css.map */
