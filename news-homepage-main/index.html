@@ -3,8 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
+<script src="script.js"></script>
     <link
       rel="icon"
       type="image/png"
@@ -15,6 +14,11 @@
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <nav>
+    <div onclick="openMenu()" id="hamburger" class="hamburger">
+    <i></i>
+    <i></i>
+    <i></i>
+  </div>
     <img src="assets/images/logo.svg" />
     <ul class="desktop-nav">
       <li>Home</li>
@@ -23,6 +27,10 @@
       <li>Trending</li>
       <li>Categories</li>
     </ul>
+    <div onclick="closeMenu()" class="cross">
+      <i></i>
+      <i></i>
+    </div>
     <ul class="mobile-nav">
       <li>Home</li>
       <li>New</li>

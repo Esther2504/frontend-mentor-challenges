@@ -43,7 +43,6 @@ nav img {
 .mobile-nav {
   display: none;
   position: absolute;
-  display: flex;
   flex-direction: column;
   gap: 20px;
   height: 100%;
@@ -57,6 +56,52 @@ nav img {
   margin-left: -10px;
 }
 
+.hamburger {
+  display: none;
+}
+
+.hamburger i {
+  width: 35px;
+  height: 3px;
+  background-color: black;
+  position: absolute;
+  right: 10px;
+}
+
+.cross {
+  display: none;
+}
+
+.cross i {
+  width: 35px;
+  height: 3px;
+  background-color: black;
+  position: absolute;
+  right: 10px;
+  transform: rotate(45deg);
+  z-index: 5;
+}
+
+.cross i:nth-child(2) {
+  transform: rotate(135deg);
+}
+
+.hamburger i:nth-child(2) {
+  margin-top: 7px;
+}
+
+.hamburger i:nth-child(3) {
+  margin-top: 14px;
+}
+
+@media screen and (max-width: 800px) {
+  .hamburger {
+    display: block;
+  }
+  .desktop-nav {
+    visibility: hidden;
+  }
+}
 .container {
   display: grid;
   gap: 30px;
