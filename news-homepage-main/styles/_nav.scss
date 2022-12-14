@@ -4,22 +4,22 @@ nav {
   margin: 50px 20px 50px 20px;
   font-size: 0.9rem;
   color: hsl(236, 13%, 42%);
-}
 
-nav li {
-  list-style: none;
-  display: inline-block;
-  margin: 0 10px;
-  cursor: pointer;
-}
+  li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 10px;
+    cursor: pointer;
 
-nav li:hover {
-  color: hsl(5, 85%, 63%);
-}
+    &:hover {
+      color: hsl(5, 85%, 63%);
+    }
+  }
 
-nav img {
-  width: 60px;
-  height: 40px;
+  img {
+    width: 60px;
+    height: 40px;
+  }
 }
 
 .mobile-nav {
@@ -42,41 +42,41 @@ nav img {
 .hamburger {
   display: none;
   cursor: pointer;
-}
 
-.hamburger i {
-  width: 35px;
-  height: 3px;
-  background-color: black;
-  position: absolute;
-  right: 50px;
+  i {
+    width: 35px;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    right: 50px;
+  }
+
+  i:nth-child(2) {
+    margin-top: 7px;
+  }
+
+  i:nth-child(3) {
+    margin-top: 14px;
+  }
 }
 
 .cross {
   display: none;
   cursor: pointer;
-}
 
-.cross i {
-  width: 35px;
-  height: 3px;
-  background-color: black;
-  position: absolute;
-  right: 10px;
-  transform: rotate(45deg);
-  z-index: 5;
-}
+  i {
+    width: 35px;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    right: 10px;
+    transform: rotate(45deg);
+    z-index: 5;
+  }
 
-.cross i:nth-child(2) {
-  transform: rotate(135deg);
-}
-
-.hamburger i:nth-child(2) {
-  margin-top: 7px;
-}
-
-.hamburger i:nth-child(3) {
-  margin-top: 14px;
+  i:nth-child(2) {
+    transform: rotate(135deg);
+  }
 }
 
 @media screen and (max-width: 800px) {
