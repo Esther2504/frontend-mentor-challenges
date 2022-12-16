@@ -52,6 +52,10 @@ body {
   grid-area: daniel;
   background-color: hsl(263deg, 55%, 52%);
   color: white;
+  background-image: url("../images/bg-pattern-quotation.svg");
+  background-repeat: no-repeat;
+  background-position: 75% 0;
+  background-size: 120px;
 }
 
 .jonathan {
