@@ -1,9 +1,51 @@
+@import url("https://fonts.google.com/specimen/Barlow+Semi+Condensed");
+* {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 80%;
+}
+
+body {
+  background-color: hsl(210deg, 46%, 95%);
+}
+
 .container {
-  width: 80%;
-  margin: 0 auto;
+  width: 85%;
+  margin: 150px auto;
   display: grid;
   grid-template-areas: "daniel daniel jonathan kira" "jeanette patrick patrick kira";
   gap: 20px;
+}
+.container > div {
+  border-radius: 10px;
+  padding: 20px 40px;
+}
+.container > div img {
+  border-radius: 99%;
+  border: 1px solid white;
+  width: 55px;
+  height: 55px;
+}
+.container > div .identity {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.container > div .identity .name {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+.container > div .identity .title {
+  opacity: 50%;
+  margin-top: 0;
+  font-size: 1rem;
+}
+.container > div .testimony h1 {
+  font-size: 1.5rem;
+}
+.container > div .testimony p {
+  opacity: 70%;
+  font-size: 1rem;
+  line-height: 140%;
 }
 
 .daniel {
@@ -20,10 +62,12 @@
 
 .kira {
   grid-area: kira;
+  background-color: white;
 }
 
 .jeanette {
   grid-area: jeanette;
+  background-color: white;
 }
 
 .patrick {
