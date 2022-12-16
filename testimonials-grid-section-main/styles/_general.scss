@@ -1,0 +1,32 @@
+.container {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas: 
+    "daniel daniel jonathan kira"
+    "jeanette patrick patrick kira";
+    gap: 20px;
+}
+
+.daniel {
+    grid-area: daniel;
+    background-color: hsl(263, 55%, 52%);
+    color: white;
+}
+
+.jonathan {
+    grid-area: jonathan;
+    background-color: hsl(217, 19%, 35%);
+    color: white;
+}
+.kira {
+    grid-area: kira;
+}
+.jeanette {
+    grid-area: jeanette;
+}
+.patrick {
+    grid-area: patrick;
+    background-color: hsl(219, 29%, 14%);
+    color: white;
+}
