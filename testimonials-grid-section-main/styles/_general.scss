@@ -90,3 +90,14 @@ p {
     background-color: hsl(219, 29%, 14%);
     color: white;
 }
+
+@media screen and (max-width: 800px) {
+    .container {
+        grid-template-areas: 
+        "daniel"
+        "jonathan"
+        "jeanette" 
+        "patrick"
+        "kira";
+}
+}
