@@ -10,7 +10,7 @@ body {
 
 .container {
   width: 85%;
-  margin: 150px auto;
+  margin: 130px auto;
   display: grid;
   grid-template-areas: "daniel daniel jonathan kira" "jeanette patrick patrick kira";
   gap: 20px;
@@ -31,20 +31,20 @@ body {
   align-items: center;
 }
 .container > div .identity .name {
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   margin-bottom: 5px;
 }
 .container > div .identity .title {
   opacity: 50%;
   margin-top: 0;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 .container > div .testimony h1 {
   font-size: 1.5rem;
 }
 .container > div .testimony p {
   opacity: 70%;
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 140%;
 }
 

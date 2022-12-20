@@ -1,0 +1,90 @@
+.container {
+  width: 85%;
+  margin: 130px auto;
+  display: grid;
+  grid-template-areas:
+    "daniel daniel jonathan kira"
+    "jeanette patrick patrick kira";
+  gap: 20px;
+
+  > div {
+    border-radius: 10px;
+    padding: 20px 40px;
+
+    img {
+      border-radius: 99%;
+      border: 1px solid white;
+      width: 55px;
+      height: 55px;
+    }
+
+    .identity {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+
+      .name {
+        font-size: 1.3rem;
+        margin-bottom: 5px;
+      }
+
+      .title {
+        opacity: 50%;
+        margin-top: 0;
+        font-size: 1.2rem;
+      }
+    }
+
+    .testimony {
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        opacity: 70%;
+        font-size: 1.2rem;
+        line-height: 140%;
+      }
+    }
+  }
+}
+
+.daniel {
+  grid-area: daniel;
+  background-color: hsl(263, 55%, 52%);
+  color: white;
+  background-image: url("../images/bg-pattern-quotation.svg");
+  background-repeat: no-repeat;
+  background-position: 75% 0;
+  background-size: 120px;
+}
+
+.jonathan {
+  grid-area: jonathan;
+  background-color: hsl(217, 19%, 35%);
+  color: white;
+}
+.kira {
+  grid-area: kira;
+  background-color: white;
+}
+.jeanette {
+  grid-area: jeanette;
+  background-color: white;
+}
+.patrick {
+  grid-area: patrick;
+  background-color: hsl(219, 29%, 14%);
+  color: white;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    grid-template-areas:
+      "daniel"
+      "jonathan"
+      "jeanette"
+      "patrick"
+      "kira";
+  }
+}
