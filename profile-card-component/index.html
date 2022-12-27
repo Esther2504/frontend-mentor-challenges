@@ -8,27 +8,67 @@
   
   <title>Profile card component</title>
   <style>
+@font-face {
+  font-family: "Kumbh Sans";
+  src: url('https://fonts.google.com/specimen/Kumbh+Sans');
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: hsl(185, 75%, 39%);
+  background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+  background-position: -50% 290%, 140% -290%;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 1000px 800px;
+  font-family: 'Kumbh Sans';
+}
+img {
+  border-radius: 99%;
+  border: 5px solid white;
+  position: relative;
+  left: 35%;
+  top: -12%;
+}
+
+.card {
+  width: 350px;
+  height: 400px;
+  background-color: white;
+  border-radius: 5%;
+  margin: 200px auto;
+ overflow: hidden;
+}
+
+.banner {
+  width: 100%;
+  height: 40%;
+  background-image: url('images/bg-pattern-card.svg');
+}
+
+.namestats {
+  font-size: 18px;
+  font-size: 700;
+}
 
   </style>
 </head>
 <body>
-  <div>
-  Victor Crest
-  26
-  London
-
-  80K
+  <div class="card">
+    <div class="banner"></div>
+<img src="images/image-victor.jpg" />
+  <span class="namestats">Victor Crest</span><span>26</span>
+<p>London</p>
+<hr>
+<div>  80K
   Followers
 
   803K
   Likes
 
   1.4K
-  Photos
+  Photos</div>
+
 </div>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
 </html>
