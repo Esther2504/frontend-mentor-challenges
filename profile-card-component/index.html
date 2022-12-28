@@ -8,10 +8,7 @@
   
   <title>Profile card component</title>
   <style>
-@font-face {
-  font-family: "Kumbh Sans";
-  src: url('https://fonts.google.com/specimen/Kumbh+Sans');
-}
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans');
 
 body {
   margin: 0;
@@ -23,6 +20,7 @@ body {
   background-size: 1000px 800px;
   font-family: 'Kumbh Sans';
 }
+
 img {
   border-radius: 99%;
   border: 5px solid white;
@@ -48,7 +46,27 @@ img {
 
 .namestats {
   font-size: 18px;
-  font-size: 700;
+  font-weight: 700;
+  text-align: center;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.stats p {
+    margin: 5px;
+}
+
+.age {
+  color:hsl(0, 0%, 59%);
+  font-size: 20px;
+  margin: 5px;
+}
+
+hr {
+  opacity: 0.4;
 }
 
   </style>
@@ -57,18 +75,22 @@ img {
   <div class="card">
     <div class="banner"></div>
 <img src="images/image-victor.jpg" />
-  <span class="namestats">Victor Crest</span><span>26</span>
-<p>London</p>
+  <span class="namestats">Victor Crest</span><span class="age">26</span>
+<p style="color:hsl(0, 0%, 59%); text-align: center;">London</p>
 <hr>
-<div>  80K
-  Followers
-
-  803K
-  Likes
-
-  1.4K
-  Photos</div>
-
+<div class="stats">
+  <div>
+  <p class="namestats">80K</p>
+  <p style="color:hsl(0, 0%, 59%)">Followers</p>
+</div>
+<div>
+  <p class="namestats">803K</p>
+  <p style="color:hsl(0, 0%, 59%)">Likes</p>
+</div>
+  <div>
+  <p class="namestats">1.4K</p>
+  <p style="color:hsl(0, 0%, 59%)">Photos</p>
+</div>
 </div>
 </body>
 </html>
